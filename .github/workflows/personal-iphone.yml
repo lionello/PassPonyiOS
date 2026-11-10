@@ -64,7 +64,7 @@ jobs:
         run: |
           set -euo pipefail
           xcodegen generate
-          xcodebuild archive -project PassPony.xcodeproj -scheme PassPony -configuration Release -destination 'generic/platform=iOS' -archivePath "$RUNNER_TEMP/PassPony.xcarchive" CODE_SIGN_STYLE=Manual DEVELOPMENT_TEAM=FE3JVHBHV2
+          xcodebuild archive -project PassPony.xcodeproj -scheme PassPony -configuration Release -destination 'generic/platform=iOS' -archivePath "$RUNNER_TEMP/PassPony.xcarchive" CODE_SIGN_STYLE=Manual CODE_SIGN_IDENTITY="Apple Distribution" DEVELOPMENT_TEAM=FE3JVHBHV2
           python3 - <<'PY'
           import os, plistlib
           options = {'method':'app-store-connect', 'signingStyle':'manual', 'teamID':'FE3JVHBHV2', 'provisioningProfiles': {'com.lunesu.passpony.enclave':'Builder store com.lunesu.passpony.enclave', 'com.lunesu.passpony.enclave.autofill':'Builder store com.lunesu.passpony.enclave.autofill'}}
