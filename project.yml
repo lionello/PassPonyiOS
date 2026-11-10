@@ -21,7 +21,7 @@ settings:
     # This is a generated project: anything set in Xcode's target editor
     # is silently reverted to these values on the next xcodegen run.
     MARKETING_VERSION: "2.1.0"
-    CURRENT_PROJECT_VERSION: "2"
+    CURRENT_PROJECT_VERSION: "3"
     DEVELOPMENT_TEAM: FE3JVHBHV2
     CODE_SIGN_STYLE: Automatic
     TARGETED_DEVICE_FAMILY: "1"
