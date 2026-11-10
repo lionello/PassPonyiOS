@@ -1,6 +1,7 @@
 name: Secure Enclave age compatibility
 on:
   push:
+    branches: [codex/secure-enclave-age]
   workflow_dispatch:
 permissions:
   contents: read
