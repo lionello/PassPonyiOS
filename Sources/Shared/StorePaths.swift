@@ -4,7 +4,7 @@ import Foundation
 enum StorePaths {
     /// App-group container so the autofill extension sees the same store.
     /// Update the group id together with the entitlements files.
-    static let appGroupID = "group.dev.norsehorse.passpony"
+    static let appGroupID = "group.com.lunesu.passpony.enclave"
 
     static var container: URL {
         if let url = FileManager.default.containerURL(

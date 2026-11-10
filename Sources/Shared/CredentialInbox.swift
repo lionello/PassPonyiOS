@@ -37,16 +37,16 @@ struct PendingCredential: Codable {
 
 enum CredentialInbox {
     /// PassPony's app group (used by the file fallback). Umbra joins it.
-    static let appGroupID = "group.dev.norsehorse.passpony"
+    static let appGroupID = "group.com.lunesu.passpony.enclave"
 
     /// Shared keychain access group. Both apps declare
-    /// `keychain-access-groups = $(AppIdentifierPrefix)dev.norsehorse.shared`.
+    /// `keychain-access-groups = $(AppIdentifierPrefix)com.lunesu.passpony.shared`.
     /// The value below must carry the team's App ID prefix — which equals the
-    /// team ID (4AVJZV35G8) for this account. If your AppIdentifierPrefix ever
+    /// team ID (FE3JVHBHV2) for this account. If your AppIdentifierPrefix ever
     /// differs from the team ID, update this string; the file fallback covers
     /// a mismatch in the meantime.
-    static let keychainAccessGroup = "4AVJZV35G8.dev.norsehorse.shared"
-    static let keychainService = "dev.norsehorse.passpony.inbox"
+    static let keychainAccessGroup = "FE3JVHBHV2.com.lunesu.passpony.shared"
+    static let keychainService = "com.lunesu.passpony.enclave.inbox"
 
     // MARK: - Producer (Umbra)
 

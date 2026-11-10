@@ -6,11 +6,11 @@
 	<true/>
 	<key>com.apple.security.application-groups</key>
 	<array>
-		<string>group.dev.norsehorse.passpony</string>
+		<string>group.com.lunesu.passpony.enclave</string>
 	</array>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>$(AppIdentifierPrefix)dev.norsehorse.shared</string>
+		<string>$(AppIdentifierPrefix)com.lunesu.passpony.shared</string>
 	</array>
 </dict>
 </plist>
