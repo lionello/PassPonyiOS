@@ -21,7 +21,7 @@ settings:
     # This is a generated project: anything set in Xcode's target editor
     # is silently reverted to these values on the next xcodegen run.
     MARKETING_VERSION: "2.1.0"
-    CURRENT_PROJECT_VERSION: "1"
+    CURRENT_PROJECT_VERSION: "2"
     DEVELOPMENT_TEAM: FE3JVHBHV2
     CODE_SIGN_STYLE: Automatic
     TARGETED_DEVICE_FAMILY: "1"
@@ -91,6 +91,7 @@ targets:
       - package: NorseHorsePGPCore
     settings:
       base:
+        TARGETED_DEVICE_FAMILY: "1"
         PRODUCT_BUNDLE_IDENTIFIER: com.lunesu.passpony.enclave
         PROVISIONING_PROFILE_SPECIFIER: Builder store com.lunesu.passpony.enclave
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
@@ -101,6 +102,8 @@ targets:
     info:
       path: Sources/App/Info.plist
       properties:
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
         CFBundleDisplayName: PassPony
         UILaunchScreen: {}
         # NFC smartcard scaffolding removed for the first store submission;
@@ -136,12 +139,15 @@ targets:
       - package: NorseHorsePGPCore
     settings:
       base:
+        TARGETED_DEVICE_FAMILY: "1"
         PRODUCT_BUNDLE_IDENTIFIER: com.lunesu.passpony.enclave.autofill
         PROVISIONING_PROFILE_SPECIFIER: Builder store com.lunesu.passpony.enclave.autofill
         CODE_SIGN_ENTITLEMENTS: Sources/Autofill/PassPonyAutofill.entitlements
     info:
       path: Sources/Autofill/Info.plist
       properties:
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
         CFBundleDisplayName: PassPony Autofill
         NSFaceIDUsageDescription: >-
           Face ID unlocks your password store for autofill.
